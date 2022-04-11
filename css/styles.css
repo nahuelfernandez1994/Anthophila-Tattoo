@@ -342,7 +342,6 @@ transform: none;
 	height: 45vh;
 	display: flex;
 	flex-flow: column;
-	justify-content: center;
 	align-items: center;
 	border-radius: 10%;
 	box-shadow: 1vh 1vh 2px #bac3d1;
@@ -400,6 +399,8 @@ table td, table th{
 	font-size: 2rem;
 }
 
+
+
 /* FIN style GIFT CARD
 COMIENZO style CONTACTO */
 
@@ -420,7 +421,7 @@ form input, form button{
 	color: white;
 }
 .container-titulo h2{
-	font-size: 2vw;
+	font-size: 2rem;
  }
 
 .container-formulario{
@@ -464,13 +465,17 @@ padding: 1rem;
 	.navbar-toggler{
 		background-color: #fed401;
 	}
+	.navbar .container-fluid{
+		flex-flow: row nowrap;
+	}
 
 	.btn-close{
 		background-color: #fed401;
 		color: black;
 	}
 	.navbar-brand img{
-		height: 10vh;
+		width: 70%;
+		flex-flow: row nowrap;
 	}
 	.navbar{
 		margin: 0;
@@ -589,6 +594,9 @@ padding: 1rem;
 		margin: 0rem;
 		padding: 0rem;
 	}
+	#gift-card .container-titulo{
+		height: 40%;
+	}
 	/*  INDEX */
 
 	#carouselsecciones{
@@ -631,6 +639,18 @@ padding: 1rem;
 	.card-gift-card img{
 		width: 75%;
 	}
+	.container-carousel-gift-card{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+	#carouselgiftcard{
+		height: 45vh;
 
+	}
 	
+	#carouselgiftcard .carousel-item h2,#carouselgiftcard .carousel-item p {
+		height: 20%;
+	}	
 }

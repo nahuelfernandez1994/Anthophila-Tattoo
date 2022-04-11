@@ -317,6 +317,10 @@ transform: none;
 
 /* COMIENZO style MAIN (gift card) */
 
+.container-carousel-gift-card{
+display: none;
+}
+
 #gift-card .container-titulo{
 	padding: 1rem;
 	margin: 1rem;
@@ -653,4 +657,7 @@ padding: 1rem;
 	#carouselgiftcard .carousel-item h2,#carouselgiftcard .carousel-item p {
 		height: 20%;
 	}	
+	.container-card-gift-card{
+		display: none;
+	}
 }

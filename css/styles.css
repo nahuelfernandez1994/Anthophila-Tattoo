@@ -148,6 +148,7 @@ body {
 	bottom: 1rem;
 	right: 10px;
 	border: black solid 0.5vh;
+	z-index: +1;
 
 }
 #whatsapp-button img {
@@ -165,19 +166,19 @@ body {
 	background-color: #fed401;
 	color: black;
 	width: 40vh;
-	height: 58vh;
-	display: flex;
-	flex-flow: column nowrap;
+	height: 57vh;
 	border-radius: 3%;
 	box-shadow: 1vh 1vh 1px #bdc1c4 ;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
 }
 .card-secciones:hover{
 	transform: translate(0, -3vh);
 	transition: all 0.3s;
 }
 .card-secciones img, .card-secciones p, .card-secciones h2{
-	width: 100%;
-	height: 100%;	
+	width: 100%;	
 }
 .card-secciones h2 {
 	text-align: center;
@@ -188,6 +189,8 @@ body {
 	text-align: center;
 	color: black;
 }
+
+
 #carouselsecciones{
 	display: none;
 }
@@ -466,6 +469,7 @@ padding: 1rem;
 /* MEDIA QUERI */
 
 @media screen and (max-width:832px) {
+	
 	.navbar-toggler{
 		background-color: #fed401;
 	}
@@ -516,13 +520,7 @@ padding: 1rem;
 	}
 
 	.container-menu{
-		position: fixed;
-		top: 0px;
-		height: 10vh;
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items:stretch;
+	display: none;
 	}
 	.container-header{
 	height: 10vh;}
@@ -588,7 +586,7 @@ padding: 1rem;
 		font-size: 1rem;
 	}
 	.card-secciones{
-		height: 61vh;
+		height: 60vh;
 	}
 	.container-datos-de-contacto{
 		margin: 0rem;
@@ -599,13 +597,12 @@ padding: 1rem;
 		padding: 0rem;
 	}
 	#gift-card .container-titulo{
-		height: 40%;
+		height: 40vh;
 	}
 	/*  INDEX */
 
 	#carouselsecciones{
 		display:flex;
-		flex-flow: row nowrap;
 	}
 	.container-carousel{
 		display: flex;
@@ -634,24 +631,19 @@ padding: 1rem;
 	.container-titulo{
 		max-height: 50vh;
 	}	
-	.card-gift-card{
-		height: 40vh;
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-around;
-	}
+
 	.card-gift-card img{
 		width: 75%;
 	}
 	.container-carousel-gift-card{
 		display: flex;
 		flex-flow: column nowrap;
-		justify-content: center;
-		align-items: center;
+		align-items:center;
+		height: 47vh;
 	}
-	#carouselgiftcard{
-		height: 45vh;
 
+	#carouselgiftcard .carousel-item img{
+		height: 100%;
 	}
 	
 	#carouselgiftcard .carousel-item h2,#carouselgiftcard .carousel-item p {
@@ -659,5 +651,15 @@ padding: 1rem;
 	}	
 	.container-card-gift-card{
 		display: none;
+	}
+	.card-gift-card{
+		height: 40vh;
+	}
+	.card-gift-card img {
+		width: 100%;
+	}
+	.card-gift-card h2{
+		text-align: center;
+		margin: 0;
 	}
 }

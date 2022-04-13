@@ -97,68 +97,47 @@
                 Mandanos un mensaje con tu consulta o pedido de reserva de turno.
             </p><br>
         </div>
-        <div>
-            <form action="formulario.php" class="container-formulario">
-                <div class="container-formulario-datos">
-                    <div class="nombre">
-                        <label for="nombre-y-apellido">Nombre y apellido</label>
-                        <input type="text" id=nombre-y-apellido placeholder="Nombre y apellido" ><br>
-                    </div>
-                    <div class="edad">
-                        <label for="edad">Edad</label>
-                        <input type="number" id=edad placeholder="Edad" ><br>
-                    </div>
-                    <div class="email">
-                        <label for="email">email</label>
-                        <input type="email" id=email placeholder="Email" ><br>
-                    </div>
+        <div class="container-formulario">
+            <div class="row g-3">
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Ingrese su nombre">
                 </div>
-                <div class="checkbox">
-                    <legend><p>
-                        Indicanos si tu consulta es por tatuajes, piercing o ambos.
-                            </p><br>
-                    </legend>
-                    <input type="checkbox" name="tatuaje" id="tatuaje">Tatuaje
-                    <input type="checkbox" name="piercing" id="piercing">Piercing
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Ingrese su apellido">
                 </div>
-                <div class="comentario">
-                    <legend><p>
-                        Dejanos tu consulta o comentario. 
-                            </p><br>
-                    </legend>
-                    <label for="comentario"></label>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                <div class="col-4">
+                    <input type="number" class="form-control" placeholder="Edad" aria-label="Ingrese su edad">
+                  </div>
+                  <div>
+                </div class="row g-3">
+                <div class="col-12">
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Ingrese su Email">
                 </div>
-                <div class="boton-enviar">
-                    <input type="submit" value="Enviar">
+                <legend><p>
+                    Indicanos si tu consulta es por tatuajes, piercing o ambos.
+                        </p>
+                </legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tatuaje" id="tatuaje" >
+                    <label class="form-check-label" for="tatuaje">
+                      Tatuajes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="piercing" id="piercing" >
+                    <label class="form-check-label" for="piercing">
+                      Piercings
+                    </label>
+                  </div>
                 </div>
-                <div class="turno-dia">
-                    <div class="destacado">
-                        <legend>
-                            <p>
-                                Indicanos que día queres reservar un turno.
-                            </p>
-                        </legend>
-                    </div>
-                     <label for="dia"></label>
-                    <input type="date" name="dia" id="dia">
+                <div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Dejanos tu consulta o comentario" id="comentario" style="height: 14vh"></textarea>
+                        <label for="comentario">Dejanos tu consulta o comentario</label>
+                      </div>
                 </div>
-                <div class="turno-hora">
-                    <div class="destacado">
-                        <legend>
-                            <p>
-                                Indicanos el horario en el que queres el turno. 
-                            </p>
-                    </div>
-                    </legend>
-                    <label for="hora"></label>
-                    <input type="time" name="hora" id="hora">
-                </div>
-                <div class="boton-enviar">
-                    <input type="submit" value="Enviar">
-                </div>
-            </form>       
-        </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>    
     </section>   
 </main>
 <footer id="pie">

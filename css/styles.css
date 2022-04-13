@@ -438,33 +438,28 @@ form input, form button{
 	border-style: double;
 	border-color: #fed401;
 	height: 100%;
+	color: black;
+}
+.container-formulario legend{
+	font-size: 1rem;
+}
+.form-control{
+	border: #fed401 1px solid;
+}
+.form-check-label{
 	color: white;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content:flex-start;
-	align-content: flex-start;
-	align-items: flex-start;
 }
-.checkbox, .comentario, .boton-enviar, .turno-dia, .turno-hora{
-padding: 1rem;
+textarea{
+	margin-top: 1rem;
 }
-.container-formulario-datos{
-	display: flex;
-	flex-flow: column nowrap;
-	align-items:flex-start;
-	padding: 1rem;
+.btn-primary{
+	background-color: #fed401;
+	color:black;
+	border: 1px #fed401 solid;
+	margin-top: 1rem;
 }
-.nombre, .edad, .email{
-
-	display: flex;
-	flex-flow: row nowrap;
-	padding: 1rem 0rem;
-	margin: 1rem 0rem;
-}
-.checkbox{
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-start
+legend p {
+	margin-bottom: 0;
 }
 /* MEDIA QUERI */
 

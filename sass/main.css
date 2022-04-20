@@ -1,0 +1,398 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Texturina', serif;
+  font-weight: 400;
+  background-color: black;
+  background-image: url(../img/patternhexagono.jpg);
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+/* STYLE HEADER */
+.container-header {
+  padding: 0rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
+  background-color: black;
+  color: white;
+  height: 13vh;
+}
+
+.container-header .navbar {
+  display: none;
+}
+
+.container-header .container-menu {
+  padding: 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: black;
+  height: 13vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0vh;
+  width: 100vw;
+}
+
+.container-header .container-menu .container-logotipo {
+  width: 33%;
+  height: 100%;
+}
+
+.container-header .container-menu .container-logotipo .logotipo {
+  height: 100%;
+}
+
+.container-header .container-menu .container-lista-de-menu {
+  width: 67%;
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+.container-header .container-menu .container-lista-de-menu .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1vh;
+}
+
+.container-header .container-menu .container-lista-de-menu .menu ul li {
+  padding: 1vh;
+}
+
+.container-header .container-menu .container-lista-de-menu .menu ul li :hover {
+  color: #fed401;
+  -webkit-transform: translate(10px);
+          transform: translate(10px);
+  position: relative;
+  top: -5px;
+  text-shadow: 5px 5px 2px white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* STYLE INDEX */
+.container-titulo-principal {
+  height: 25vh;
+  text-align: center;
+  background-color: transparent;
+}
+
+.container-titulo-principal p {
+  height: 25vh;
+  text-align: center;
+  background-color: transparent;
+}
+
+.container-whatsapp-button {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fed401;
+  display: inline-block;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 10px;
+  border: black solid 0.5vh;
+  z-index: +1;
+}
+
+.container-whatsapp-button #whatsapp-button img {
+  height: 5vh;
+}
+
+.container-card-secciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2vh;
+}
+
+.container-card-secciones .card-secciones {
+  padding: 1rem;
+  margin: 0 0 2vh 0;
+  background-color: #fed401;
+  color: black;
+  width: 40vh;
+  height: 57vh;
+  border-radius: 3%;
+  -webkit-box-shadow: 1vh 1vh 1px #bdc1c4;
+          box-shadow: 1vh 1vh 1px #bdc1c4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container-card-secciones .card-secciones:hover {
+  -webkit-transform: translate(0, -3vh);
+          transform: translate(0, -3vh);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container-card-secciones .card-secciones img {
+  width: 100%;
+}
+
+.container-card-secciones .card-secciones p {
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.container-card-secciones .card-secciones h2 {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+
+#carouselsecciones {
+  display: none;
+}
+
+/* STYLE FOOTER */
+.container-pie {
+  margin: 1rem 0rem 0rem 0rem;
+  background-color: black;
+  color: white;
+}
+
+.container-pie .container-datos-pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-pie .container-logotipo {
+  padding: 0rem;
+  margin: 0rem;
+  min-width: 10vw;
+}
+
+.container-pie .container-logotipo img {
+  width: 100%;
+}
+
+.container-pie .container-mapa {
+  padding: 1rem;
+  margin: 1rem;
+  width: 30vw;
+}
+
+.container-pie .container-datos-de-contacto {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.container-redes {
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: #fed401;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4vh;
+}
+
+.container-redes p {
+  margin: 0;
+  color: black;
+}
+
+.container-redes h3 {
+  background-color: #fed401;
+  height: 1rem;
+}
+
+.container-redes img {
+  margin: 0rem 1rem;
+  background-color: #fed401;
+  height: 1rem;
+}
+
+.container-redes .container-iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+#pie .container-redes-mobile {
+  display: none;
+}
+
+/* Comienzo style MAIN (TATTOO) */
+#tatuajes .container-galeria {
+  padding: 1rem;
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100vw;
+  max-width: 100%;
+  gap: 1rem;
+  background-color: transparent;
+}
+
+#tatuajes .container-galeria h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#tatuajes .container-galeria .card-tatuaje {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+#tatuajes .container-galeria .card-tatuaje img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.container-galeria :nth-child(n):hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+  border: #fed401 double 3px;
+}
+
+#tatuajes .container-galeria :nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -webkit-transform: none;
+          transform: none;
+}
+
+#tatuajes .container-galeria :nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -webkit-transform: none;
+          transform: none;
+}
+
+#tatuajes .container-galeria .card-piercing {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+#tatuajes .container-galeria .card-piercing :nth-child(n):hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+  border: #fed401 double 3px;
+}
+
+#tatuajes .container-galeria .card-piercing img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+#tatuajes .container-galeria .card-piercing p {
+  font-weight: 400;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

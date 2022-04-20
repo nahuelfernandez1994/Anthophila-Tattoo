@@ -1,0 +1,294 @@
+$colorprincipal: #fed401;
+$colorsecundario: black;
+
+*{
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+html{
+	font-size: 16px;
+}
+body {
+    font-family: 'Texturina', serif;
+    font-weight: 400;
+    background-color: $colorsecundario;
+	background-image: url(../img/patternhexagono.jpg);
+}
+h3 {
+    font-weight: 400;
+}
+h2 {
+    font-weight: 800;
+}
+h1 {
+    font-weight: 800;
+    font-size: 3rem;
+	color: white;
+}
+p{
+	color: white;
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	font-size: 2vh;
+}
+
+/* STYLE HEADER */
+
+.container-header{
+    padding: 0rem 0rem 0rem 0rem;
+	margin: 0rem 0rem 1rem 0rem;
+	background-color: $colorsecundario;
+	color:white;
+	height: 13vh;
+    .navbar{
+        display: none;
+    }
+    .container-menu {
+        padding: 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+        background-color: $colorsecundario;
+        height: 13vh;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        position: fixed;
+        top:0vh;
+        width: 100vw;
+        .container-logotipo{
+            width: 33%;
+            height: 100%;
+            .logotipo{
+                height: 100%;
+            }
+        }
+        .container-lista-de-menu{
+            width: 67%;
+            margin: 0rem 0rem 0rem 1rem;
+            .menu{
+                ul{
+                    display: flex;
+	                flex-flow: row;
+	                justify-content:space-around;
+                    padding: 1vh;
+                    li{
+                        padding: 1vh;
+                        :hover{
+                            color: #fed401;
+                            transform: translate(10px);
+                            position: relative;
+                            top:-5px;
+                            text-shadow: 5px 5px 2px white ;
+                            transition: all 0.5s;
+                            }                  
+                    }
+                }
+                
+            }
+        }
+    }
+}
+/* STYLE INDEX */
+.container-titulo-principal{
+	height: 25vh;
+	text-align: center;
+	background-color: transparent;
+    p{
+        height: 25vh;
+        text-align: center;
+        background-color: transparent;
+    }
+}
+.container-whatsapp-button{
+	padding: 1rem;
+	margin: 1rem;
+	background-color: $colorprincipal;
+	display: inline-block;
+	border-radius: 50%;
+	position: fixed	;
+	bottom: 1rem;
+	right: 10px;
+	border: $colorsecundario solid 0.5vh;
+	z-index: +1;
+   #whatsapp-button{
+       img{
+        height: 5vh;
+       }
+   }
+}
+.container-card-secciones{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin: 2vh;
+    .card-secciones {
+        padding: 1rem;
+        margin: 0 0 2vh 0;
+        background-color: $colorprincipal;
+        color: $colorsecundario;
+        width: 40vh;
+        height: 57vh;
+        border-radius: 3%;
+        box-shadow: 1vh 1vh 1px #bdc1c4 ;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        &:hover{
+            transform: translate(0, -3vh);
+            transition: all 0.3s;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+            color: black;
+        }
+        h2{
+            width: 100%;
+            text-align: center;
+            color: black;
+            font-size: 2rem;
+        }
+    }
+}
+#carouselsecciones{
+	display: none;
+}
+
+/* STYLE FOOTER */
+
+.container-pie {
+	margin: 1rem 0rem 0rem 0rem;
+	background-color: $colorsecundario;
+	color:white;
+    .container-datos-pie{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .container-logotipo{
+        padding: 0rem;
+        margin: 0rem;
+        min-width: 10vw;
+        img{
+            width: 100%;
+        }
+    }
+    .container-mapa {
+        padding: 1rem;
+        margin: 1rem;
+        width: 30vw;
+    }.container-datos-de-contacto {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+}
+.container-redes{
+
+    margin: 0rem 0rem 0rem 0rem;
+    background-color: $colorprincipal;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 4vh;
+    p{
+        margin: 0;
+        color: $colorsecundario;
+    }
+    h3{
+
+        background-color: $colorprincipal;
+        height: 1rem;
+    }
+    img{
+        margin: 0rem 1rem;
+        background-color: $colorprincipal;
+        height: 1rem;
+    }
+    .container-iconos{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+}
+#pie .container-redes-mobile {
+	display: none;
+}
+/* Comienzo style MAIN (TATTOO) */
+#tatuajes{
+.container-galeria{
+	padding: 1rem;
+	background-color: black;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 100vw;
+	max-width: 100%;
+	gap:1rem;
+	background-color:transparent;
+	h2{
+        color:white;
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .card-tatuaje{
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        img{
+            height: 100%;
+	        width: 100%;
+	        border-radius: 10%;
+        }
+    }
+    :nth-child(n):hover{
+        transform: scale(1.5);
+        transition: all 0.75s;
+        border: #fed401 double 3px;
+    }
+    @for $i from 1 to 3 {
+        :nth-child(#{$i}){
+            grid-row: (#{$i})/(#{$i+2});
+            grid-column:(#{$i})/(#{$i+2});
+            @if $i==2 {
+                grid-column:(#{$i+1})/(#{$i+3});
+            }
+            transform: none;
+        }
+    }
+    .card-piercing{
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        :nth-child(n):hover{
+            transform: scale(2);
+            transition: all 0.75s;
+            border: #fed401 double 3px;
+        }
+        img{
+            height: 100%;
+	        width: 100%;
+	        border-radius: 10%;
+        }
+        p{
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
+}

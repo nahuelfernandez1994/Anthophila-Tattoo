@@ -410,12 +410,7 @@ table td, table th{
 /* FIN style GIFT CARD
 COMIENZO style CONTACTO */
 
-form{
-	font-size: 2vw;
-}
-form input, form button{
-	height: 2vw;
-}
+
 .container-titulo{
 	padding: 1rem;
 	margin: 1rem;

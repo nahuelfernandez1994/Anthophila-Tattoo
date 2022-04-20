@@ -303,7 +303,7 @@ a {
 }
 
 /* Comienzo style MAIN (TATTOO) */
-#tatuajes .container-galeria {
+.container-galeria {
   padding: 1rem;
   background-color: black;
   display: -ms-grid;
@@ -318,7 +318,7 @@ a {
   background-color: transparent;
 }
 
-#tatuajes .container-galeria h2 {
+.container-galeria h2 {
   color: white;
   font-size: 2rem;
   text-align: center;
@@ -326,13 +326,13 @@ a {
   margin: 1rem;
 }
 
-#tatuajes .container-galeria .card-tatuaje {
+.container-galeria .card-tatuaje {
   height: 100%;
   width: 100%;
   border-radius: 10%;
 }
 
-#tatuajes .container-galeria .card-tatuaje img {
+.container-galeria .card-tatuaje img {
   height: 100%;
   width: 100%;
   border-radius: 10%;
@@ -346,7 +346,7 @@ a {
   border: #fed401 double 3px;
 }
 
-#tatuajes .container-galeria :nth-child(1) {
+.container-galeria :nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
@@ -357,7 +357,7 @@ a {
           transform: none;
 }
 
-#tatuajes .container-galeria :nth-child(2) {
+.container-galeria :nth-child(2) {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
@@ -371,28 +371,175 @@ a {
           transform: none;
 }
 
-#tatuajes .container-galeria .card-piercing {
+.container-galeria .card-piercing {
   height: 100%;
   width: 100%;
   border-radius: 10%;
 }
 
-#tatuajes .container-galeria .card-piercing :nth-child(n):hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+.container-galeria .card-piercing :nth-child(n):hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition: all 0.75s;
   transition: all 0.75s;
   border: #fed401 double 3px;
 }
 
-#tatuajes .container-galeria .card-piercing img {
+.container-galeria .card-piercing img {
   height: 100%;
   width: 100%;
   border-radius: 10%;
 }
 
-#tatuajes .container-galeria .card-piercing p {
-  font-weight: 400;
+.container-galeria :nth-child(n):hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+  border: #fed401 double 3px;
+}
+
+.container-galeria :nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.container-galeria :nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -webkit-transform: none;
+          transform: none;
+}
+
+/* STYLE GIFT CARD */
+.container-carousel-gift-card {
+  display: none;
+}
+
+#gift-card .container-titulo {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1rem;
+  border-color: #fed401;
+  border-style: double;
+  height: 100%;
   text-align: center;
+  height: 35vh;
+}
+
+.container-card-gift-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-card-gift-card .card-gift-card {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fed401;
+  color: black;
+  width: 40vh;
+  height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10%;
+  -webkit-box-shadow: 1vh 1vh 2px #bac3d1;
+          box-shadow: 1vh 1vh 2px #bac3d1;
+}
+
+.container-card-gift-card .card-gift-card img {
+  width: 100%;
+}
+
+.container-card-gift-card .card-gift-card h3 {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+
+.container-card-gift-card .card-gift-card p {
+  text-align: center;
+  color: black;
+}
+
+/* STYLE CONTACTO */
+#contacto .container-titulo {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1rem;
+  border-color: #fed401;
+  border-style: double;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+#contacto .container-titulo h2 {
+  font-size: 2rem;
+}
+
+#contacto .container-formulario {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1rem;
+  border-style: double;
+  border-color: #fed401;
+  height: 100%;
+  color: black;
+}
+
+#contacto .container-formulario legend {
+  font-size: 1rem;
+}
+
+#contacto .container-formulario legend p {
+  margin-bottom: 0;
+}
+
+#contacto .container-formulario .form-control {
+  border: #fed401 1px solid;
+}
+
+#contacto .container-formulario .form-check-label {
+  color: white;
+}
+
+#contacto .container-formulario textarea {
+  margin-top: 1rem;
+}
+
+#contacto .container-formulario .btn-primary {
+  background-color: #fed401;
+  color: black;
+  border: 1px #fed401 solid;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -227,7 +227,7 @@ a {
 	display: none;
 }
 /* Comienzo style MAIN (TATTOO) */
-#tatuajes{
+
 .container-galeria{
 	padding: 1rem;
 	background-color: black;
@@ -255,6 +255,7 @@ a {
 	        width: 100%;
 	        border-radius: 10%;
         }
+
     }
     :nth-child(n):hover{
         transform: scale(1.5);
@@ -276,7 +277,7 @@ a {
         width: 100%;
         border-radius: 10%;
         :nth-child(n):hover{
-            transform: scale(2);
+            transform: scale(1.5);
             transition: all 0.75s;
             border: #fed401 double 3px;
         }
@@ -285,10 +286,118 @@ a {
 	        width: 100%;
 	        border-radius: 10%;
         }
-        p{
-            font-weight: 400;
-            text-align: center;
+    }
+    :nth-child(n):hover{
+        transform: scale(1.5);
+        transition: all 0.75s;
+        border: #fed401 double 3px;
+    }
+    @for $i from 1 to 3 {
+        :nth-child(#{$i}){
+            grid-row: (#{$i})/(#{$i+2});
+            grid-column:(#{$i})/(#{$i+2});
+            @if $i==2 {
+                grid-column:(#{$i+1})/(#{$i+3});
+            }
+            transform: none;
         }
     }
 }
+/* STYLE GIFT CARD */
+
+.container-carousel-gift-card{
+    display: none;
+    }
+#gift-card{
+    .container-titulo{
+        padding: 1rem;
+        margin: 1rem;
+        border:1rem;
+        border-color: #fed401;
+        border-style: double;
+        height: 100%;
+        text-align: center;
+        height: 35vh;
+    } 
+}   
+.container-card-gift-card{
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+    .card-gift-card{
+        padding: 1rem;
+        margin: 1rem;
+        background-color: #fed401;
+        color: black;
+        width: 40vh;
+        height: 45vh;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 1vh 1vh 2px #bac3d1;
+        img{
+            width: 100%;
+        }
+        h3{
+            text-align: center;
+            color: black;
+            font-size: 2rem;
+        }
+        p{
+            text-align: center;
+            color: black;
+        }
+    }
+}
+/* STYLE CONTACTO */
+
+#contacto{
+    .container-titulo{
+        padding: 1rem;
+	margin: 1rem;
+	border:1rem;
+	border-color: #fed401;
+	border-style: double;
+	height: 100%;
+	text-align: center;
+	color: white;
+        h2{
+            font-size: 2rem;
+        }
+    }
+    .container-formulario{
+        padding: 1rem;
+        margin: 1rem;
+        border: 1rem;
+        border-style: double;
+        border-color: #fed401;
+        height: 100%;
+        color: black;
+        legend{
+            font-size: 1rem;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .form-control{
+            border: #fed401 1px solid;
+        }
+        .form-check-label{
+            color: white;
+        }
+        textarea{
+            margin-top: 1rem;
+        }
+        .btn-primary{
+            background-color: #fed401;
+            color:black;
+            border: 1px #fed401 solid;
+            margin-top: 1rem;
+        }
+    }
+}
+@media screen and (max-width: 832px){
+    
+    
 }

@@ -189,7 +189,6 @@ a {
     .container-mapa {
         padding: 1rem;
         margin: 1rem;
-        width: 30vw;
     }.container-datos-de-contacto {
         padding: 1rem;
         margin: 1rem;
@@ -397,7 +396,116 @@ a {
         }
     }
 }
+/* MEDIA QUERI */
+
 @media screen and (max-width: 832px){
-    
-    
+    .container-header{
+        height: 10vh;
+        .container-menu{
+            display: none;
+        }
+        .navbar{
+            margin: 0;
+	    	padding: 0;
+		    display: flex;
+            .container-fluid{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                .navbar-toggler{
+                    background-color: #fed401;
+                }
+                .navbar-brand{
+                    img{
+                        width: 70vw;
+                        flex-flow: row nowrap;
+                    }
+                }
+                .offcanvasheigth{
+                    height: 50vh;
+                    width: 50vw;
+                }
+                .offcanvascolor{
+                    background-color:black;
+                }
+                .offcanvas{
+                    .offcanvas-header{
+                        .btn-close{
+                            background-color: #fed401;
+                            color: black;
+                        }
+                    }
+                    .offcanvas-body{
+                        .navbar-nav{
+                            .nav-item{
+                                .nav-link{
+                                    color: white;
+                                    :active{
+                                        color: #fed401;
+                                    }
+                                }
+                                .dropdown-menu{
+                                    background-color: black;
+                                    color: #fed401;
+                                    .dropdown-item{
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container-lista-de-menu{
+        display: none;
+    }
+    .container-datos-pie{
+        img{
+            display: none;
+        }
+    }
+    .container-redes{
+        display: none;
+    }
+    #pie{
+        .container-datos-pie{
+            display: flex;
+		    flex-flow: column nowrap;
+		    justify-content:space-around;
+		    height: 90vh;
+            .container-redes-mobile{
+                width: 100%;
+		        display: flex;
+		        flex-flow: row nowrap;
+		        justify-content:space-around;
+                .card-redes-mobile{
+                    background-color: #fed401;
+		            color: black;
+		            height: 11vh;
+		            width: 11vh;
+		            border-radius: 10%;
+		            box-shadow: 1vh 1vh 2px #bdc1c4;
+                     img{
+                        display: flex;
+	    	            height: 80%;
+		                width: 80%;
+		                margin: 1vh;
+                    }
+                }
+            }
+            .container-datos-de-contacto{
+                margin: 0rem;
+                padding: 0rem;
+            }
+            .container-mapa{
+                margin: 0rem;
+                padding: 0rem;
+            }
+        }
+    }
 }

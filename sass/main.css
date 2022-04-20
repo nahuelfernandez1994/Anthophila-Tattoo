@@ -248,7 +248,6 @@ a {
 .container-pie .container-mapa {
   padding: 1rem;
   margin: 1rem;
-  width: 30vw;
 }
 
 .container-pie .container-datos-de-contacto {
@@ -541,5 +540,129 @@ a {
   color: black;
   border: 1px #fed401 solid;
   margin-top: 1rem;
+}
+
+/* MEDIA QUERI */
+@media screen and (max-width: 832px) {
+  .container-header {
+    height: 10vh;
+  }
+  .container-header .container-menu {
+    display: none;
+  }
+  .container-header .navbar {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container-header .navbar .container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  .container-header .navbar .container-fluid .navbar-toggler {
+    background-color: #fed401;
+  }
+  .container-header .navbar .container-fluid .navbar-brand img {
+    width: 70vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .container-header .navbar .container-fluid .offcanvasheigth {
+    height: 50vh;
+    width: 50vw;
+  }
+  .container-header .navbar .container-fluid .offcanvascolor {
+    background-color: black;
+  }
+  .container-header .navbar .container-fluid .offcanvas .offcanvas-header .btn-close {
+    background-color: #fed401;
+    color: black;
+  }
+  .container-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
+    color: white;
+  }
+  .container-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link :active {
+    color: #fed401;
+  }
+  .container-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu {
+    background-color: black;
+    color: #fed401;
+  }
+  .container-header .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: white;
+  }
+  .container-lista-de-menu {
+    display: none;
+  }
+  .container-datos-pie img {
+    display: none;
+  }
+  .container-redes {
+    display: none;
+  }
+  #pie .container-datos-pie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 90vh;
+  }
+  #pie .container-datos-pie .container-redes-mobile {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #pie .container-datos-pie .container-redes-mobile .card-redes-mobile {
+    background-color: #fed401;
+    color: black;
+    height: 11vh;
+    width: 11vh;
+    border-radius: 10%;
+    -webkit-box-shadow: 1vh 1vh 2px #bdc1c4;
+            box-shadow: 1vh 1vh 2px #bdc1c4;
+  }
+  #pie .container-datos-pie .container-redes-mobile .card-redes-mobile img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80%;
+    width: 80%;
+    margin: 1vh;
+  }
+  #pie .container-datos-pie .container-datos-de-contacto {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  #pie .container-datos-pie .container-mapa {
+    margin: 0rem;
+    padding: 0rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

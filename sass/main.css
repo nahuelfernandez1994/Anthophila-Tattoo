@@ -664,5 +664,137 @@ a {
     margin: 0rem;
     padding: 0rem;
   }
+  .container-titulo-principal {
+    height: 25vh;
+  }
+  .container-titulo-principal h1 {
+    font-size: 2rem;
+  }
+  .container-titulo-principal p {
+    font-size: 1rem;
+  }
+  .container-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container-carousel #carouselsecciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container-carousel .card-secciones {
+    height: 60vh;
+    padding: 1rem;
+    margin: 0 0 2vh 0;
+    background-color: #fed401;
+    color: black;
+    width: 40vh;
+    height: 57vh;
+    border-radius: 3%;
+    -webkit-box-shadow: 1vh 1vh 1px #bdc1c4;
+            box-shadow: 1vh 1vh 1px #bdc1c4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container-carousel .card-secciones h2 {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+  }
+  .container-carousel .card-secciones p {
+    text-align: center;
+    color: black;
+  }
+  .container-carousel .card-secciones :hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  #gift-card .container-titulo {
+    height: 40vh;
+  }
+  .container-card-secciones {
+    display: none;
+  }
+  #carousel-secciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container-titulo {
+    max-height: 50vh;
+  }
+  .card-gift-card img {
+    width: 75%;
+  }
+  .container-carousel-gift-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 47vh;
+  }
+  .container-carousel-gift-card .card-gift-card {
+    height: 40vh;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fed401;
+    color: black;
+    width: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10%;
+    -webkit-box-shadow: 1vh 1vh 2px #bac3d1;
+            box-shadow: 1vh 1vh 2px #bac3d1;
+  }
+  .container-carousel-gift-card .card-gift-card img {
+    width: 100%;
+  }
+  .container-carousel-gift-card .card-gift-card h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .container-carousel-gift-card .card-gift-card p {
+    text-align: center;
+    margin: 0;
+    color: black;
+  }
+  #carouselgiftcard .carousel-item h2 {
+    height: 20%;
+  }
+  #carouselgiftcard .carousel-item p {
+    height: 20%;
+  }
+  .container-card-gift-card {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

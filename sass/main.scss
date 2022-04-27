@@ -508,4 +508,109 @@ a {
             }
         }
     }
+    .container-titulo-principal{
+        height: 25vh;
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    .container-carousel{
+        #carouselsecciones{
+            display: flex;
+        }
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        .card-secciones{
+            height: 60vh;
+            padding: 1rem;
+	        margin: 0 0 2vh 0;
+	        background-color: #fed401;
+	        color: black;
+	        width: 40vh;
+	        height: 57vh;
+	        border-radius: 3%;
+	        box-shadow: 1vh 1vh 1px #bdc1c4 ;
+	        display: flex;
+	        flex-flow: column nowrap;
+	        justify-content: space-around;
+            h2{
+                text-align: center;
+                color: black;
+                font-size: 2rem;
+            }
+            p{
+                text-align: center;
+                color: black;
+            }
+            :hover{
+                transform: none;
+            }
+        }
+    }
+    #gift-card{
+        .container-titulo{
+            height: 40vh;
+        }
+    }
+    .container-card-secciones{
+        display: none;
+    }
+    #carousel-secciones{
+        display: flex;
+    }
+    .container-titulo{
+        max-height: 50vh;
+    }
+    .card-gift-card{
+        img{
+            width: 75%;
+        }
+    }
+    .container-carousel-gift-card{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 47vh;
+        .card-gift-card{
+            height: 40vh;
+            padding: 1rem;
+            margin: 1rem;
+            background-color: #fed401;
+            color: black;
+            width: 40vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            border-radius: 10%;
+            box-shadow: 1vh 1vh 2px #bac3d1;
+            img{
+                width: 100%;
+            }
+            h2{
+                text-align: center;
+                margin: 0;
+            }
+            p{
+                text-align: center;
+                margin: 0;
+                color: black;
+            }
+        }
+    }
+    #carouselgiftcard{
+        .carousel-item{
+            h2{
+                height: 20%;
+            }
+            p{
+                height: 20%;
+            }
+        }
+    }
+    .container-card-gift-card{display: none;}
 }

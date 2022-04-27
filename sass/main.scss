@@ -1,6 +1,34 @@
 $colorprincipal: #fed401;
 $colorsecundario: black;
 
+$colores: (
+    colorp:$colorprincipal,
+    colors:$colorsecundario,
+);
+
+@mixin estilo-card-secciones {
+    padding: 1rem;
+    margin: 0 0 2vh 0;
+    background-color: $colorprincipal;
+    color: $colorsecundario;
+    border-radius: 3%;
+    box-shadow: 1vh 1vh 1px #bdc1c4 ;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+@mixin estilo-card-gift-card {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: map-get($colores,colorp);
+    color: map-get($colores, colors);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 10%;
+    box-shadow: 1vh 1vh 2px #bac3d1;
+}
+
 *{
     box-sizing: border-box;
 	margin: 0;
@@ -84,7 +112,7 @@ a {
                     li{
                         padding: 1vh;
                         :hover{
-                            color: #fed401;
+                            color: map-get($colores,colorp);
                             transform: translate(10px);
                             position: relative;
                             top:-5px;
@@ -132,17 +160,10 @@ a {
 	justify-content: space-around;
 	margin: 2vh;
     .card-secciones {
-        padding: 1rem;
-        margin: 0 0 2vh 0;
-        background-color: $colorprincipal;
-        color: $colorsecundario;
+        @include estilo-card-secciones();
         width: 40vh;
         height: 57vh;
-        border-radius: 3%;
-        box-shadow: 1vh 1vh 1px #bdc1c4 ;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-around;
+        
         &:hover{
             transform: translate(0, -3vh);
             transition: all 0.3s;
@@ -153,12 +174,12 @@ a {
         p{
             width: 100%;
             text-align: center;
-            color: black;
+            color: map-get($colores, colors);
         }
         h2{
             width: 100%;
             text-align: center;
-            color: black;
+            color: map-get($colores, colors);
             font-size: 2rem;
         }
     }
@@ -229,7 +250,7 @@ a {
 
 .container-galeria{
 	padding: 1rem;
-	background-color: black;
+	background-color: map-get($colores, colors);
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -259,7 +280,7 @@ a {
     :nth-child(n):hover{
         transform: scale(1.5);
         transition: all 0.75s;
-        border: #fed401 double 3px;
+        border: map-get($colores,colorp) double 3px;
     }
     @for $i from 1 to 3 {
         :nth-child(#{$i}){
@@ -278,7 +299,7 @@ a {
         :nth-child(n):hover{
             transform: scale(1.5);
             transition: all 0.75s;
-            border: #fed401 double 3px;
+            border: map-get($colores,colorp) double 3px;
         }
         img{
             height: 100%;
@@ -289,7 +310,7 @@ a {
     :nth-child(n):hover{
         transform: scale(1.5);
         transition: all 0.75s;
-        border: #fed401 double 3px;
+        border: map-get($colores,colorp) double 3px;
     }
     @for $i from 1 to 3 {
         :nth-child(#{$i}){
@@ -312,7 +333,7 @@ a {
         padding: 1rem;
         margin: 1rem;
         border:1rem;
-        border-color: #fed401;
+        border-color: map-get($colores,colorp);
         border-style: double;
         height: 100%;
         text-align: center;
@@ -324,28 +345,21 @@ a {
 	flex-flow: row wrap;
 	justify-content: center;
     .card-gift-card{
-        padding: 1rem;
-        margin: 1rem;
-        background-color: #fed401;
-        color: black;
+        @include estilo-card-gift-card();
         width: 40vh;
         height: 45vh;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        border-radius: 10%;
-        box-shadow: 1vh 1vh 2px #bac3d1;
+       
         img{
             width: 100%;
         }
         h3{
             text-align: center;
-            color: black;
+            color: map-get($colores, colors);
             font-size: 2rem;
         }
         p{
             text-align: center;
-            color: black;
+            color: map-get($colores, colors);
         }
     }
 }
@@ -356,7 +370,7 @@ a {
         padding: 1rem;
 	margin: 1rem;
 	border:1rem;
-	border-color: #fed401;
+	border-color: map-get($colores,colorp);
 	border-style: double;
 	height: 100%;
 	text-align: center;
@@ -370,9 +384,9 @@ a {
         margin: 1rem;
         border: 1rem;
         border-style: double;
-        border-color: #fed401;
+        border-color: map-get($colores,colorp);
         height: 100%;
-        color: black;
+        color: map-get($colores, colors);
         legend{
             font-size: 1rem;
             p{
@@ -380,7 +394,7 @@ a {
             }
         }
         .form-control{
-            border: #fed401 1px solid;
+            border: map-get($colores,colorp) 1px solid;
         }
         .form-check-label{
             color: white;
@@ -389,9 +403,9 @@ a {
             margin-top: 1rem;
         }
         .btn-primary{
-            background-color: #fed401;
-            color:black;
-            border: 1px #fed401 solid;
+            background-color: map-get($colores,colorp);
+            color:map-get($colores, colors);
+            border: 1px map-get($colores,colorp) solid;
             margin-top: 1rem;
         }
     }
@@ -414,9 +428,9 @@ a {
                 justify-content: space-between;
                 margin: 0;
                 padding: 0;
-                background-color: black;
+                background-color: map-get($colores, colors);
                 .navbar-toggler{
-                    background-color: #fed401;
+                    background-color: map-get($colores,colorp);
                 }
                 .navbar-brand{
                     img{
@@ -429,13 +443,13 @@ a {
                     width: 50vw;
                 }
                 .offcanvascolor{
-                    background-color:black;
+                    background-color:map-get($colores, colors);
                 }
                 .offcanvas{
                     .offcanvas-header{
                         .btn-close{
-                            background-color: #fed401;
-                            color: black;
+                            background-color: map-get($colores,colorp);
+                            color: map-get($colores, colors);
                         }
                     }
                     .offcanvas-body{
@@ -444,12 +458,12 @@ a {
                                 .nav-link{
                                     color: white;
                                     :active{
-                                        color: #fed401;
+                                        color: map-get($colores,colorp);
                                     }
                                 }
                                 .dropdown-menu{
-                                    background-color: black;
-                                    color: #fed401;
+                                    background-color: map-get($colores, colors);
+                                    color: map-get($colores,colorp);
                                     .dropdown-item{
                                         color: white;
                                     }
@@ -484,8 +498,8 @@ a {
 		        flex-flow: row nowrap;
 		        justify-content:space-around;
                 .card-redes-mobile{
-                    background-color: #fed401;
-		            color: black;
+                    background-color: map-get($colores,colorp);
+		            color: map-get($colores, colors);
 		            height: 11vh;
 		            width: 11vh;
 		            border-radius: 10%;
@@ -525,27 +539,21 @@ a {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
-        .card-secciones{
-            height: 60vh;
-            padding: 1rem;
-	        margin: 0 0 2vh 0;
-	        background-color: #fed401;
-	        color: black;
+        .card-secciones{     
+            @include estilo-card-secciones();     
 	        width: 40vh;
 	        height: 57vh;
-	        border-radius: 3%;
-	        box-shadow: 1vh 1vh 1px #bdc1c4 ;
 	        display: flex;
 	        flex-flow: column nowrap;
 	        justify-content: space-around;
             h2{
                 text-align: center;
-                color: black;
+                color: map-get($colores, colors);
                 font-size: 2rem;
             }
             p{
                 text-align: center;
-                color: black;
+                color: map-get($colores, colors);
             }
             :hover{
                 transform: none;
@@ -577,17 +585,9 @@ a {
         align-items: center;
         height: 47vh;
         .card-gift-card{
+            @include estilo-card-gift-card();
             height: 40vh;
-            padding: 1rem;
-            margin: 1rem;
-            background-color: #fed401;
-            color: black;
             width: 40vh;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            border-radius: 10%;
-            box-shadow: 1vh 1vh 2px #bac3d1;
             img{
                 width: 100%;
             }
@@ -598,7 +598,7 @@ a {
             p{
                 text-align: center;
                 margin: 0;
-                color: black;
+                color: map-get($colores, colors);
             }
         }
     }

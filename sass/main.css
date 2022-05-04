@@ -268,23 +268,25 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 4vh;
+  height: 8vh;
 }
 
 .container-redes p {
   margin: 0;
   color: black;
+  font-size: 1.5rem;
 }
 
 .container-redes h3 {
-  background-color: #fed401;
-  height: 1rem;
+  color: black;
+  font-size: 1.5rem;
+  margin: 0 0 0 1rem;
 }
 
 .container-redes img {
   margin: 0rem 1rem;
   background-color: #fed401;
-  height: 1rem;
+  height: 1.5rem;
 }
 
 .container-redes .container-iconos {
@@ -301,7 +303,85 @@ a {
   display: none;
 }
 
+.container-historia {
+  border: #fed401 double 1rem;
+  padding: 1vh;
+  margin: 1rem;
+}
+
+.container-historia h2 {
+  color: white;
+  text-align: center;
+}
+
 /* Comienzo style MAIN (TATTOO) */
+#tatuajes h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#piercings h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#estampados h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#estampados p {
+  text-align: center;
+}
+
+#tazas h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+#tazas p {
+  text-align: center;
+}
+
+.container-galeria-estampados {
+  padding: 1rem;
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100vw;
+  max-width: 100%;
+  gap: 1rem;
+  background-color: transparent;
+}
+
+.container-galeria-estampados .card-estampado {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.container-galeria-estampados .card-estampado img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
 .container-galeria {
   padding: 1rem;
   background-color: black;
@@ -315,14 +395,6 @@ a {
   max-width: 100%;
   gap: 1rem;
   background-color: transparent;
-}
-
-.container-galeria h2 {
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-  padding: 1rem;
-  margin: 1rem;
 }
 
 .container-galeria .card-tatuaje {
@@ -345,43 +417,10 @@ a {
   border: #fed401 double 3px;
 }
 
-.container-galeria :nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  -webkit-transform: none;
-          transform: none;
-}
-
-.container-galeria :nth-child(2) {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2/4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-column: 3/5;
-  -webkit-transform: none;
-          transform: none;
-}
-
 .container-galeria .card-piercing {
   height: 100%;
   width: 100%;
   border-radius: 10%;
-}
-
-.container-galeria .card-piercing :nth-child(n):hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: all 0.75s;
-  transition: all 0.75s;
-  border: #fed401 double 3px;
 }
 
 .container-galeria .card-piercing img {
@@ -390,15 +429,7 @@ a {
   border-radius: 10%;
 }
 
-.container-galeria :nth-child(n):hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  -webkit-transition: all 0.75s;
-  transition: all 0.75s;
-  border: #fed401 double 3px;
-}
-
-.container-galeria :nth-child(1) {
+#tatuajes .container-galeria :nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
@@ -409,7 +440,7 @@ a {
           transform: none;
 }
 
-.container-galeria :nth-child(2) {
+#tatuajes .container-galeria :nth-child(2) {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
@@ -421,6 +452,47 @@ a {
   grid-column: 3/5;
   -webkit-transform: none;
           transform: none;
+}
+
+#piercings .container-galeria :nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -webkit-transform: none;
+          transform: none;
+}
+
+#piercings .container-galeria :nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+  -webkit-transform: none;
+          transform: none;
+}
+
+#estampados .container-galeria-estampados :nth-child(n):hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+  border: #fed401 double 3px;
+}
+
+#tazas .container-galeria-estampados :nth-child(n):hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+  border: #fed401 double 3px;
 }
 
 /* STYLE GIFT CARD */

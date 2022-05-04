@@ -355,6 +355,14 @@ a {
   text-align: center;
 }
 
+#equivalencias h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
 .container-galeria-estampados {
   padding: 1rem;
   background-color: black;
@@ -559,6 +567,23 @@ a {
 .container-card-gift-card .card-gift-card p {
   text-align: center;
   color: black;
+}
+
+#equivalencias .container-tabla {
+  padding: 1rem;
+  margin: 1rem;
+  border: #fed401 double 1rem;
+}
+
+#equivalencias .container-tabla table {
+  color: white;
+  text-align: center;
+}
+
+#equivalencias .container-tabla table .titulo-tabla {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fed401;
 }
 
 /* STYLE CONTACTO */

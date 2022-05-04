@@ -301,6 +301,15 @@ a {
         text-align: center;
     }
 }
+#equivalencias{
+    h2{
+        color:white;
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
 .container-galeria-estampados{
     padding: 1rem;
 	background-color: map-get($colores, colors);
@@ -449,6 +458,22 @@ a {
         }
     }
 }
+#equivalencias{
+    .container-tabla{
+        padding: 1rem;
+        margin: 1rem;
+        border: #fed401 double 1rem;
+        table{
+            color: white;
+            text-align: center;
+            .titulo-tabla{
+                font-weight: 700;
+                font-size: 1.1rem;
+                color: map-get($colores, $colorp );
+            }
+        }
+    }
+}
 /* STYLE CONTACTO */
 
 #contacto{
@@ -480,14 +505,13 @@ a {
             }
         }
         .form-control{
-            border: map-get($colores,colorp) 1px solid;
+            border: map-get($colores,colorp) 2px solid;
+            margin-top:1rem;
         }
         .form-check-label{
             color: white;
         }
-        textarea{
-            margin-top: 1rem;
-        }
+        
         .btn-primary{
             background-color: map-get($colores,colorp);
             color:map-get($colores, colors);
